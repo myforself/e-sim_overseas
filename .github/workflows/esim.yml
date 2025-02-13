@@ -3,8 +3,8 @@ name: Run Flexiroam Script Every 12 Hours
 on:
   schedule:
     # Run every 12 hours at minute 0
-    - cron: '0 */1 +(-------when you need to use, delete this------------) + 2 * * *'
-  workflow_dis +(-------when you need to use, delete this------------) +patch:  # Allow manual triggering
+    - cron: '0 */12 * * *'
+  workflow_dispatch:  # Allow manual triggering
 
 jobs:
   run-script:
